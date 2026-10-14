@@ -1,0 +1,12 @@
+.DS_Store
+dist/
+config.production.json
+__pycache__/
+# Archivos de trabajo: no incluir en el repositorio público.
+README.md
+docs/
+tests/
+scripts/
+config.production.example.json
+assets/img/manifest.json
+_site/

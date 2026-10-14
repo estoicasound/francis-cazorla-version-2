@@ -1,0 +1,5 @@
+# DEMO: noindex, nofollow, noarchive está en el HTML.
+# Permitimos la lectura para que los buscadores puedan encontrar noindex.
+# No constituye control de acceso ni una medida de privacidad.
+User-agent: *
+Allow: /
