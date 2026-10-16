@@ -1,0 +1,44 @@
+/* Finishing details only. Keep the approved cover and scene choreography. */
+.ui-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  vertical-align: middle;
+  color: inherit;
+  overflow: visible;
+}
+.text-link > span, .button > span, .mobile-contact b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ornament, .contact-flower { height: 1em; }
+.editorial-rule > span { height: 1em; }
+.intro-footnote::before { content: ''; height: 28px; }
+.image-open { background: var(--paper-light); color: var(--ink); }
+.image-open .ui-icon { width: 17px; height: 17px; }
+.portfolio-item a:hover .image-open { transform: none; }
+.footer nav a { gap: 8px; }
+.service-details summary > span { display: inline-flex; flex-shrink: 0; }
+.lightbox-stage > button { display: grid; place-items: center; }
+.lightbox-stage > button .ui-icon { width: 22px; height: 22px; }
+.mobile-contact {
+  min-height: 48px;
+  padding: 12px 18px;
+  background: #292d29;
+  color: #f6f4ee;
+  border: 1px solid #ffffff26;
+  box-shadow: 0 2px 8px #00000012;
+  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+}
+.mobile-contact .ui-icon { width: 16px; height: 16px; flex-basis: 16px; }
+.cover-contact-managed:not(.cover-contact-visible) .mobile-contact {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+@media (max-width: 599px) {
+  .mobile-contact { background: #292d29; }
+}
