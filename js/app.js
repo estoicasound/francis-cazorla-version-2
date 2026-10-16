@@ -218,8 +218,8 @@
   loadMap.hidden = false;
   loadMap.addEventListener('click', () => {
     const frame = document.createElement('iframe');
-    frame.title = 'Google Maps: Almería, área de servicio de Francis Cazorla. No es la ubicación de un estudio.';
-    frame.src = 'https://www.google.com/maps?q=Almer%C3%ADa%2C%20Espa%C3%B1a&z=12&output=embed';
+    frame.title = 'Google Maps: estudio de Francis Cazorla, Camino Cruz de Caravaca, 7, 04008 Almería. Atención con cita previa.';
+    frame.src = 'https://www.google.com/maps?cid=14123049268649819056&output=embed';
     frame.loading = 'lazy';
     frame.referrerPolicy = 'no-referrer';
     frame.allowFullscreen = true;
