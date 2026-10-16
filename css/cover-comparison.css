@@ -1,0 +1,27 @@
+/* Additional composition selector. The three type families stay independent. */
+.cover-choices{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:5px 0 22px}
+.cover-choices>span{font-size:10px;text-transform:uppercase;letter-spacing:.16em;margin-right:12px}
+.cover-choices button{min-height:48px;padding:12px 20px;border:1px solid #939d88;border-radius:0;background:transparent;color:var(--ink);font-size:12px}
+.cover-choices button[aria-pressed='true']{background:var(--ink);color:var(--paper)}
+.cover.cover-monochrome{height:clamp(740px,100svh,1080px)}
+.cover-monochrome>img{object-position:50% 62%;filter:grayscale(1) contrast(1.04);transform:scale(calc(1.025 - var(--comparison-progress,0)*.025));transform-origin:50% 55%}
+.cover.cover-monochrome::after{background:linear-gradient(180deg,#0006,transparent 34%),linear-gradient(0deg,#0008,transparent 29%)}
+.cover-monochrome .cover-copy{inset:0;width:auto}
+.cover-monochrome .cover-copy>.overline{position:absolute;left:clamp(22px,4vw,70px);top:24px}
+.cover-monochrome .sample-title{position:absolute;inset:0;width:100%;height:100%;max-width:none;margin:0;padding:0;font-size:clamp(58px,14vw,166px);letter-spacing:-.055em;pointer-events:none;text-shadow:0 1px 10px #0002}
+.cover-monochrome .sample-title>span{position:absolute;top:65px;left:clamp(22px,4vw,70px);max-width:calc(100% - 44px);margin:0;transform:translateY(calc(var(--comparison-progress,0)*-20px))}
+.cover-monochrome .sample-title>span+span{top:auto;left:auto;right:clamp(22px,4vw,70px);bottom:168px;text-align:right;transform:translateY(calc(var(--comparison-progress,0)*14px))}
+.cover-monochrome .sample-title small{font-family:'DM Sans',Arial,sans-serif;font-size:.14em;letter-spacing:.2em;line-height:1.9}
+.cover-monochrome .cover-bottom>p{margin-left:0;margin-right:auto}
+.cover-option{border-top:1px solid #a5ad9c;margin-top:30px;padding-top:35px;display:grid;gap:30px}
+.cover-option>figure{margin:0;height:570px;position:relative;overflow:hidden;background:#262722;color:#fff}
+.cover-option>figure img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;filter:grayscale(1) contrast(1.04)}
+.cover-option>figure::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0005,transparent 32%)}
+.cover-option>figure>span{position:absolute;z-index:1;top:25px;left:25px;right:25px;font:400 clamp(38px,10vw,80px)/1.08 'Bodoni Moda',Didot,serif;text-transform:uppercase;letter-spacing:-.06em}
+.cover-option h2{font:400 35px/1.15 'Bodoni Moda',Didot,serif;letter-spacing:-.05em;margin:20px 0}
+.cover-option p{font-size:14px;color:#56604f;max-width:45ch}
+.cover-option nav{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:25px}
+.cover-option nav a{font-size:12px;border-bottom:1px solid #5f6b56;min-height:44px;display:inline-flex;align-items:center}
+@media(min-width:900px){.cover-option{grid-template-columns:1.1fr 1fr;gap:65px;align-items:center}.cover-option>figure{height:700px}.cover-monochrome .cover-bottom>a{width:280px}.cover-option>figure>span{font-size:clamp(48px,5.8vw,86px)}}
+@media(max-width:599px){.cover-choices>span{width:100%;margin:0}.cover-choices button{flex:1;padding-inline:10px}.cover-monochrome .sample-title{font-size:17vw}.cover-monochrome .sample-title small{font-size:.18em}.cover-monochrome .sample-title>span{top:70px}.cover-monochrome .sample-title>span+span{bottom:180px}}
+@media(prefers-reduced-motion:reduce){.cover-monochrome>img,.cover-monochrome .sample-title>span,.cover-monochrome .sample-title>span+span{transform:none}}

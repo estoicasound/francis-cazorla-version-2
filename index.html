@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-typeface="cormorant">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,16 +22,20 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&amp;family=DM+Sans:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/editorial.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/cover-editorial.css">
   <script type="application/ld+json" id="business-schema">
   {"@context":"https://schema.org","@type":"ProfessionalService","name":"Francis Cazorla Fotógrafo","description":"Fotografía de bodas, preboda y postboda en Almería. Álbumes personalizados y entrega digital.","telephone":"+34722460059","areaServed":{"@type":"AdministrativeArea","name":"Almería"},"sameAs":["https://www.instagram.com/franciscazorlaphoto/","https://www.bodas.net/fotografos/fotografo-francis-cazorla--e15176","https://linktr.ee/Franciscazorlafotografo"]}
   </script>
   <script src="js/contact.js" defer></script>
   <script src="js/app.js?v=2" defer></script>
+  <script src="js/typography.js" defer></script>
+  <script src="js/cover-editorial.js" defer></script>
 </head>
-<body>
+<body class="cover-editorial">
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <header class="site-header" id="inicio">
   <a class="brand" href="#inicio" aria-label="Francis Cazorla Fotógrafo, inicio"><span class="brand-seal" aria-hidden="true">fc<span>✳</span></span><span class="brand-wordmark">Francis Cazorla<small>FOTOGRAFÍA · ALMERÍA</small></span></a>
@@ -43,12 +47,12 @@
 <main id="contenido">
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-photo">
-      <img src="assets/img/novios-atardecer-reflejo-1800.jpg" srcset="assets/img/novios-atardecer-reflejo-900.jpg 900w, assets/img/novios-atardecer-reflejo-1800.jpg 1800w" sizes="100vw" width="1800" height="1200" fetchpriority="high" alt="Novios abrazados al atardecer, con su reflejo en el agua y un paisaje de montañas">
+      <img src="assets/editorial/novios-rincon-rustico-1800.jpg" srcset="assets/editorial/novios-rincon-rustico-480.jpg 479w, assets/editorial/novios-rincon-rustico-900.jpg 900w, assets/editorial/novios-rincon-rustico-1800.jpg 1199w" sizes="100vw" width="1199" height="1800" fetchpriority="high" alt="Una pareja de novios sentada muy cerca en un rincón rústico, presentada en blanco y negro">
     </div>
     <div class="hero-shade"></div>
     <div class="hero-copy">
       <p class="eyebrow hero-kicker"><span class="tiny-star" aria-hidden="true">✳</span> FOTÓGRAFO DE BODAS EN ALMERÍA</p>
-      <h1 id="hero-title"><span class="visually-hidden">Francis Cazorla, fotógrafo de bodas en Almería. </span>Lo que se siente.<br><em>Lo que se queda.</em></h1>
+      <h1 id="hero-title"><span class="visually-hidden">Francis Cazorla, fotógrafo de bodas en Almería. </span><span class="hero-phrase"><span class="hero-prefix">Lo que se</span><span class="hero-tail"> siente.</span></span><br><em class="hero-phrase"><span class="hero-prefix">Lo que se</span><span class="hero-tail"> queda.</span></em></h1>
       <p class="hero-description">El día pasa. La emoción permanece.<br>Fotografías para volver a vivirlo.</p>
       <a class="text-link light" href="#portfolio">Explorar las historias <span aria-hidden="true">↗</span></a>
     </div>
